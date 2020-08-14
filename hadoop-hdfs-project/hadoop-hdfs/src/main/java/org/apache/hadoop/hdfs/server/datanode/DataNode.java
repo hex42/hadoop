@@ -2709,6 +2709,7 @@ public class DataNode extends ReconfigurableBase
   /** Start a single datanode daemon and wait for it to finish.
    *  If this thread is specifically interrupted, it will stop waiting.
    */
+  //todo: entry point of data node
   public void runDatanodeDaemon() throws IOException {
     blockPoolManager.startAll();
 
