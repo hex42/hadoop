@@ -711,6 +711,7 @@ class BPOfferService {
    * @return true if further processing may be required or false otherwise. 
    * @throws IOException
    */
+  //todo: entry point
   private boolean processCommandFromActive(DatanodeCommand cmd,
       BPServiceActor actor) throws IOException {
     final BlockCommand bcmd = 
@@ -807,6 +808,7 @@ class BPOfferService {
    * This method should handle commands from Standby namenode except
    * DNA_REGISTER which should be handled earlier itself.
    */
+  //todo:ethan entry point
   private boolean processCommandFromStandby(DatanodeCommand cmd,
       BPServiceActor actor) throws IOException {
     switch(cmd.getAction()) {
